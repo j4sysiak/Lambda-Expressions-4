@@ -37,13 +37,19 @@ public class App {
 					(int a) -> {
 							System.out.println("Lambda expression2");
 							System.out.println("Lambda expression3");
-							return 2;
+							return a+2;
 						  } 
 				  );
 		
 		
 		runner.run(/*implementing object interface Executable*/ 
-				(int a) -> 3 
+				(int a) -> a+3 
+			  );
+		
+		runner.run(/*implementing object interface Executable*/ 
+				(int a) -> {
+							return a+4;
+							} 
 			  );
   
 	}
