@@ -55,6 +55,9 @@ public class App {
 				(a) -> a+5   //12+5
 			  );
 		
+		runner.run(/*implementing object interface Executable*/ 
+				a -> a+6   //12+6
+			  );
 	}
 
 }
